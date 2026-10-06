@@ -3,18 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alterar a cor de fundo</title>
+    <meta name="theme-color" content="#f5f5f2">
+    <title>Veloce — encontre seu próximo carro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="body">
-    <main>
-        <button id="botao">Alterar o tema </button>
-        <section id="principal">
-      
-            <h1>Noticias principais</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi quod quas eius expedita. Doloribus veniam architecto eaque dolore ut similique fugiat magnam neque quisquam, explicabo voluptatibus aspernatur reprehenderit harum aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum inventore, molestiae nihil alias aut pariatur laborum saepe earum atque culpa non, corrupti quis obcaecati magni mollitia temporibus ut dignissimos tenetur.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est molestiae laborum recusandae placeat adipisci! Autem, vero eum debitis illum impedit fugiat deserunt quasi asperiores minima numquam voluptate cumque quis deleniti? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe necessitatibus quasi voluptas nam quisquam modi aliquam itaque doloribus? Sint cum, quia deleniti aut ullam nemo totam maiores repellat dignissimos sit!
-            </p>
+    <main class="pagina">
+        <header class="topo">
+            <a class="marca" href="#" aria-label="Veloce, página inicial">
+                <span class="marca-icone">V</span> veloce
+            </a>
+            <nav aria-label="Navegação principal">
+                <a href="#principal">Carros</a>
+                <a href="#vantagens">Por que a Veloce?</a>
+            </nav>
+            <button id="botao" type="button" aria-pressed="false">
+                <span aria-hidden="true">☾</span> Modo escuro
+            </button>
+        </header>
+
+        <section id="principal" class="hero">
+            <div class="hero-texto">
+                <p class="etiqueta"><span></span> SEU PRÓXIMO CARRO ESTÁ AQUI</p>
+                <h1>Dirija o que<br>move você<span>.</span></h1>
+                <p class="descricao">Carros selecionados, procedência garantida e uma experiência de compra feita para você.</p>
+                <a class="botao-principal" href="#vantagens">Encontrar meu carro <span aria-hidden="true">↗</span></a>
+                <div class="detalhes">
+                    <div><strong>+ de 500</strong><span>carros disponíveis</span></div>
+                    <div><strong>100%</strong><span>procedência garantida</span></div>
+                </div>
+            </div>
+            <div class="hero-imagem" role="img" aria-label="Carro esportivo em uma estrada ao pôr do sol">
+                <div class="imagem-legenda">
+                    <span>DESTAQUE DA SEMANA</span>
+                    <strong>Performance que inspira.</strong>
+                </div>
+            </div>
+        </section>
+
+        <section id="vantagens" class="faixa">
+            <span>✳ &nbsp; Compra segura</span>
+            <span>✳ &nbsp; Veículos revisados</span>
+            <span>✳ &nbsp; Atendimento especial</span>
+            <span>✳ &nbsp; Seu próximo capítulo começa aqui</span>
         </section>
     </main>
     <script src="script.js"></script>
